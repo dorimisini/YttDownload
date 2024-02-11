@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.row{
+    margin-top: 40px;
+}
+
+/* new *
+
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+  }
+  
+  /* Navbar logo */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-logo:hover {
+    color: #888;
+  }
+  
+  /* Navbar menu */
+  .navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin: 0 10px;
+  }
+  
+  .navbar-menu li a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #888;
+  }
+  
+  /* Navbar toggler */
+  .navbar-toggler {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .navbar-toggler-line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-toggler.active .navbar-toggler-line:nth-of-type(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .navbar-toggler.active .navbar-toggler-line:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggler.active .navbar-toggler-line:nth-of-type(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  @media (max-width: 768px) {
+    /* Navbar container */
+    .navbar-container {
+      padding: 0 20px;
+    }
+  
+    /* Navbar menu */
+    .navbar-menu {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background-color: #fff;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    .navbar-menu.active {
+        display: flex;
+        }
+        
+        .navbar-menu li {
+        margin: 10px 0;
+        }
+        .navbar-menu li a {
+            font-size: 18px;
+            color: #000;
+            text-decoration: none;
+            }
+            
+            /* Navbar toggler */
+            .navbar-toggler {
+            display: flex;
+            }
+
+        }
+    

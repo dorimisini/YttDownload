@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-body {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.palo{
+    margin-top: 150px;
+}
+
+
+
+
+
+/* Set default font size */
+body {
+    font-size: 16px;
+  }
+  
+  footer{
+    margin-top: 200px;
+  }
+  /* Small screens */
+  @media (max-width: 575px) {
+    .video1 video {
+      width: 100%;
+      height: auto;
+    }
+    
+    .paragraf {
+      font-size: 14px;
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .video1 video {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .paragraf {
+      font-size: 16px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 768px) {
+    .container-p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .paragraf {
+      font-size: 18px;
+    }
+  }
+  
+  
